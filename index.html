@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Labeler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YOLO Labeler</h1>
+        <div class="upload-section">
+            <input type="file" id="image-upload" accept="image/*">
+            <label for="image-upload">Upload Image</label>
+        </div>
+        <div class="canvas-container">
+            <canvas id="labeling-canvas"></canvas>
+        </div>
+        <div class="controls">
+            <input type="text" id="class-id" placeholder="Class ID" value="0">
+            <button id="clear-btn">Clear All</button>
+            <button id="download-btn">Download YOLO TXT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
